@@ -1,0 +1,46 @@
+PPS
+0 = pps puede abrir ordenes (la cantidad de ordenes en la pps es menor al max de ordenes posibles abiertas en la pps)
+1 = con max de ordenes posibles abiertas, sin pllt en camino y sin cola
+2 = con max de ordenes posibles abiertas, reservada
+3 = con max de ordenes posibles abiertas, bot en pps, en picking
+4 = pps espera al siguiente bot en la cola
+5 = pps espera que bot salga (bot no sale porque no encuentra a cual pps ir, están todas ocupadas)
+
+
+Orden
+0 = cerrada
+1 = abierta
+2 = finalizada
+
+
+pllt
+0=quieto en almacenamiento
+1=en movimiento (recorrido pps)
+2=en recepcion
+3=vacio en zona de pllts vacios
+
+Bot state
+0= sin task, bajo pllt o no 
+1= bot en camino a buscar pllt en almacenamiento
+2= bot cargando pllt 
+3= en camino a nodo PPS desde almacenamiento (pps estaba libre y bot la deja reservada)
+3.1 = bot terminó de cargar pallet de almacenamiento y espera que alguna pps se desocupe
+3.2= en camino a cola de nodo PPS desde almacenamiento
+3.3= en cola de nodo PPS
+3.4= bot avanzando a nodo pps desde su cola (esta en 1era posición de cola y avanza a la pps)
+3.5 = bot avanzando a siguiente posición en la cola de la pps
+
+10=en espera pps se desocupe
+4= en nodo PPS
+5= en camino a nodo pps desde pps anterior
+6= en camino a dejar pllt en almacenamiento
+7= bot descargando pllt
+8= en camino a dejar pllt en zona pllts vacíos 
+9= en camino a buscar pallet a recepción
+
+state2
+0=bot en tarea de traslasar pallet a pps
+
+
+
+
